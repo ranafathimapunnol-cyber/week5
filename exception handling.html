@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  try {
+  console.log("Try block");
+} catch (error) {
+  console.log("Catch block");
+} finally {
+  console.log("Always executed");
+}
+</script>
+
+<script>
+try {
+  let age = 77;
+  if (age < 18) {
+    throw "Not eligible";
+  }
+} catch (error) {
+  console.log(error);
+}
+</script>
+
+<script>try {
+  console.log(x);
+} catch (error) {
+  console.log("Error occurred");
+}
+</script>
+<script>try {
+  let b = 40;
+  let a = 10 * b;
+  
+  console.log(a);
+} catch (error) {
+  console.log("b is not defined");
+}
+</script>
+<script>try {
+  let num = 10;
+  num();
+} catch (error) {
+  console.log("This is a type error");
+}
+</script>
+</body>
+</html>

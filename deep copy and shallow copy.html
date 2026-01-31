@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>const originals= {
+  name: "Rana",
+  marks: { math: 90 }
+};
+
+const deepCopy = JSON.parse(JSON.stringify(originals));
+
+deepCopy.marks.math = 50;
+
+console.log(originals.marks.math); 
+</script>
+
+<script>const original = {
+  name: "Rana",
+  marks: { math: 90 }
+};
+
+const shallowCopy = { ...original };
+
+shallowCopy.marks.math = 50;
+
+console.log(original.marks.math); 
+</script>
+</body>
+</html>
